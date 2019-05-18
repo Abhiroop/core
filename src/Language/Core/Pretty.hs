@@ -7,6 +7,7 @@ import Language.Core.Syntax
 import Text.PrettyPrint
 import Data.Char
 import qualified Data.ByteString.Lazy.Char8 as L
+import Prelude hiding ((<>))
 
 ppModule :: Module -> Doc
 ppModule (Module (pkg,mod) tdefs vdefgs)
